@@ -4,14 +4,18 @@ RUN apt update -y
 RUN apt upgrade -y
 
 
-RUN apt install nginx -y
-RUN apt install php -y
-RUN apt install mariadb-server -y
-RUN apt install wget -y
+RUN apt install -y nginx
+RUN apt install -y php
+RUN apt install -y mariadb-server
+RUN apt install -y wget
+RUN apt install -y composer
+RUN apt install -y php-fpm
+RUN apt install -y php-mysqlnd
+
 
 # dev
 
-RUN apt install vim -y
+RUN apt install -y vim
 
 # /dev
 
