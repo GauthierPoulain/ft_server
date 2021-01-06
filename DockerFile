@@ -3,7 +3,17 @@ FROM debian:buster
 RUN apt update -y
 RUN apt upgrade -y
 
+
 RUN apt install nginx -y
+RUN apt install php -y
+RUN apt install mariadb-server -y
+RUN apt install wget -y
+
+# dev
+
+RUN apt install vim -y
+
+# /dev
 
 ADD  ./srcs /srcs
 
