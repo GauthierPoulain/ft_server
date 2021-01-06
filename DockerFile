@@ -1,3 +1,14 @@
 FROM debian:buster
 
-# RUN "apt update"
+RUN apt update -y
+RUN apt upgrade -y
+
+RUN apt install nginx -y
+
+ADD  ./srcs /srcs
+
+EXPOSE 80 443
+
+WORKDIR /srcs
+
+ENTRYPOINT /srcs/init.sh
