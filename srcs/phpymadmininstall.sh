@@ -9,4 +9,7 @@ rm phpMyAdmin-5.0.4-all-languages.tar.gz
 
 cd phpmyadmin
 
+mkdir tmp
+chmod 777 tmp
+
 cp /srcs/config.inc.php .
