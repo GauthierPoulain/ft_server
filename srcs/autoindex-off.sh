@@ -1,2 +1,2 @@
-cp ./ai-n.conf /etc/nginx/sites-enabled/default
+sed -i 's/autoindex on;/autoindex off;/g' /etc/nginx/sites-enabled/default
 service nginx restart
