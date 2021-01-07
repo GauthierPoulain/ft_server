@@ -26,10 +26,10 @@
 define('DB_NAME', 'wordpress');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', 'user');
+define('DB_USER', 'MYSQL_USER');
 
 /** Mot de passe de la base de données MySQL. */
-define('DB_PASSWORD', 'bite');
+define('DB_PASSWORD', 'MYSQL_PASSWORD');
 
 /** Adresse de l’hébergement MySQL. */
 define('DB_HOST', 'localhost');

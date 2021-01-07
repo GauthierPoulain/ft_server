@@ -12,6 +12,9 @@ RUN apt install -y composer
 RUN apt install -y php-fpm
 RUN apt install -y php-mysqlnd
 
+ENV MYSQL_USER='GogoLeDozoOMGGGGG'
+ENV MYSQL_PASSWORD='salut'
+
 ADD  ./srcs /srcs
 
 EXPOSE 80 443
