@@ -12,13 +12,6 @@ RUN apt install -y composer
 RUN apt install -y php-fpm
 RUN apt install -y php-mysqlnd
 
-
-# dev
-
-RUN apt install -y vim
-
-# /dev
-
 ADD  ./srcs /srcs
 
 EXPOSE 80 443
