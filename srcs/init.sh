@@ -15,7 +15,6 @@ openssl x509 -outform pem -in RootCA.pem -out RootCA.crt
 service php7.3-fpm start
 
 cp ./default.conf /etc/nginx/sites-enabled/default
-
-./autoindex-off.sh
+service nginx start
 
 tail -f /var/log/nginx/access.log -f /var/log/nginx/error.log
